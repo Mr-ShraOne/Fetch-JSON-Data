@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Fetch JSON Data
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list inset>
+      <ion-card>
+    <ion-item *ngFor="let user of postList">
+      <h2>{{ user.id }}</h2>
+      <h2>{{ user.hp_id }}</h2>
+      <ion-avatar item-start class="">
+        <img src="https://www.vighnhartaservices.com/{{ user.logo }}" alt="AT"/>
+      </ion-avatar>
+      <h2>{{ user.name }}</h2>
+      <h2>{{ user.contact }}</h2>
+      <h2>{{ user.contact1 }}</h2>
+      <h2>{{ user.email }}</h2>
+      <h2>{{ user.address }}</h2>
+      <h2>{{ user.contact1 }}</h2>
+    </ion-item>
+  </ion-card>
+  </ion-list>
+
+</ion-content>
